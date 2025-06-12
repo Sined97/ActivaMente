@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Evaluación ActivaMente: Impulsando el Aprendizaje</title>
+<style>
+   body {
+     font-family: Arial, sans-serif;
+     background-color: #f2f7fa;
+     padding: 20px;
+   }
+   .container {
+     max-width: 800px;
+     margin: auto;
+     background-color: #ffffff;
+     padding: 30px;
+     border-radius: 8px;
+     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+   }
+   h2 {
+     color: #003366;
+   }
+   .question-block {
+     margin-bottom: 25px;
+   }
+   label {
+     font-weight: bold;
+   }
+   .likert label, .options label {
+     font-weight: normal;
+     margin-right: 15px;
+   }
+   .likert input[type="radio"],
+   .options input[type="radio"] {
+     margin-right: 5px;
+   }
+   textarea {
+     width: 100%;
+     height: 80px;
+     resize: vertical;
+   }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>Valoración del Instructor y Contenido</h2>
+<!-- Pregunta configurable -->
+<form>
+<!-- CAMBIAR A 'open', 'likert' u 'option' -->
+<!-- Pregunta 1 -->
+<div class="question-block">
+<label>1. ¿Qué te pareció el curso?</label>
+<div class="type-open">
+<textarea placeholder="Escribe tu respuesta..."></textarea>
+</div>
+</div>
+<!-- Pregunta 2: Likert -->
+<div class="question-block">
+<label>2. Organización del curso</label>
+<div class="likert">
+<label><input type="radio" name="q2">⭐</label>
+<label><input type="radio" name="q2">⭐⭐</label>
+<label><input type="radio" name="q2">⭐⭐⭐</label>
+<label><input type="radio" name="q2">⭐⭐⭐⭐</label>
+<label><input type="radio" name="q2">⭐⭐⭐⭐⭐</label>
+</div>
+</div>
+<!-- Pregunta 3: Opciones -->
+<div class="question-block">
+<label>3. ¿Recomendarías el curso?</label>
+<div class="options">
+<label><input type="radio" name="q3">Sí</label>
+<label><input type="radio" name="q3">No</label>
+<label><input type="radio" name="q3">Tal vez</label>
+</div>
+</div>
+<!-- Repite el bloque cambiando los textos y el tipo -->
+<!-- Pregunta 4 -->
+<div class="question-block">
+<label>4. ¿Qué mejorarías del curso?</label>
+<div class="type-open">
+<textarea placeholder="Escribe tu sugerencia..."></textarea>
+</div>
+</div>
+<!-- Pregunta 5 -->
+<div class="question-block">
+<label>5. Claridad de los objetivos</label>
+<div class="likert">
+<label><input type="radio" name="q5">⭐</label>
+<label><input type="radio" name="q5">⭐⭐</label>
+<label><input type="radio" name="q5">⭐⭐⭐</label>
+<label><input type="radio" name="q5">⭐⭐⭐⭐</label>
+<label><input type="radio" name="q5">⭐⭐⭐⭐⭐</label>
+</div>
+</div>
+<!-- Pregunta 6 -->
+<div class="question-block">
+<label>6. ¿Qué tanto aplicas lo aprendido?</label>
+<div class="options">
+<label><input type="radio" name="q6">Frecuentemente</label>
+<label><input type="radio" name="q6">Ocasionalmente</label>
+<label><input type="radio" name="q6">Nunca</label>
+</div>
+</div>
+<!-- Pregunta 7 -->
+<div class="question-block">
+<label>7. Comentarios adicionales</label>
+<div class="type-open">
+<textarea placeholder="Tu opinión es importante..."></textarea>
+</div>
+</div>
+<!-- Pregunta 8 -->
+<div class="question-block">
+<label>8. Dominio del instructor</label>
+<div class="likert">
+<label><input type="radio" name="q8">⭐</label>
+<label><input type="radio" name="q8">⭐⭐</label>
+<label><input type="radio" name="q8">⭐⭐⭐</label>
+<label><input type="radio" name="q8">⭐⭐⭐⭐</label>
+<label><input type="radio" name="q8">⭐⭐⭐⭐⭐</label>
+</div>
+</div>
+<!-- Pregunta 9 -->
+<div class="question-block">
+<label>9. ¿Volverías a tomar un curso con este instructor?</label>
+<div class="options">
+<label><input type="radio" name="q9">Sí</label>
+<label><input type="radio" name="q9">No</label>
+</div>
+</div>
+<!-- Pregunta 10 -->
+<div class="question-block">
+<label>10. ¿Tienes alguna observación que nos ayude a mejorar?</label>
+<div class="type-open">
+<textarea placeholder="Sugerencias de temas..."></textarea>
+</div>
+</div>
+<button type="submit">Enviar encuesta</button>
+</form>
+</div>
+</body>
+</html>
