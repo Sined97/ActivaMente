@@ -214,6 +214,8 @@
 
         }
 
+      }).catch(err => {
+          alert("❌ Error de red o de CORS: " + err.message);
       });
 
     });
