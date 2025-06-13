@@ -4,76 +4,41 @@
 <meta charset="UTF-8">
 <title>Encuesta de Satisfacción</title>
 <style>
-
-    body {
-
-      font-family: Arial, sans-serif;
-
-      background-color: #f2f7fa;
-
-      padding: 20px;
-
-    }
-
-    .container {
-
-      max-width: 800px;
-
-      margin: auto;
-
-      background-color: #ffffff;
-
-      padding: 30px;
-
-      border-radius: 8px;
-
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-
-    }
-
-    h2 {
-
-      color: #003366;
-
-    }
-
-    .question-block {
-
-      margin-bottom: 25px;
-
-    }
-
-    label {
-
-      font-weight: bold;
-
-    }
-
-    .likert label, .options label {
-
-      font-weight: normal;
-
-      margin-right: 15px;
-
-    }
-
-    .likert input[type="radio"],
-
-    .options input[type="radio"] {
-
-      margin-right: 5px;
-
-    }
-
-    textarea {
-
-      width: 100%;
-
-      height: 80px;
-
-      resize: vertical;
-
-    }
+   body {
+     font-family: Arial, sans-serif;
+     background-color: #f2f7fa;
+     padding: 20px;
+   }
+   .container {
+     max-width: 800px;
+     margin: auto;
+     background-color: #ffffff;
+     padding: 30px;
+     border-radius: 8px;
+     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+   }
+   h2 {
+     color: #003366;
+   }
+   .question-block {
+     margin-bottom: 25px;
+   }
+   label {
+     font-weight: bold;
+   }
+   .likert label, .options label {
+     font-weight: normal;
+     margin-right: 15px;
+   }
+   .likert input[type="radio"],
+   .options input[type="radio"] {
+     margin-right: 5px;
+   }
+   textarea {
+     width: 100%;
+     height: 80px;
+     resize: vertical;
+   }
 </style>
 </head>
 <body>
@@ -83,142 +48,117 @@
 <div class="question-block">
 <label>1. ¿Qué te pareció el curso?</label>
 <div class="type-open">
-<textarea placeholder="Escribe tu respuesta..."></textarea>
+<textarea name="q1" placeholder="Escribe tu respuesta..."></textarea>
 </div>
 </div>
 <div class="question-block">
 <label>2. Organización del curso</label>
 <div class="likert">
-<label><input type="radio" name="q2">⭐</label>
-<label><input type="radio" name="q2">⭐⭐</label>
-<label><input type="radio" name="q2">⭐⭐⭐</label>
-<label><input type="radio" name="q2">⭐⭐⭐⭐</label>
-<label><input type="radio" name="q2">⭐⭐⭐⭐⭐</label>
+<label><input type="radio" name="q2" value="⭐">⭐</label>
+<label><input type="radio" name="q2" value="⭐⭐">⭐⭐</label>
+<label><input type="radio" name="q2" value="⭐⭐⭐">⭐⭐⭐</label>
+<label><input type="radio" name="q2" value="⭐⭐⭐⭐">⭐⭐⭐⭐</label>
+<label><input type="radio" name="q2" value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐</label>
 </div>
 </div>
 <div class="question-block">
 <label>3. ¿Recomendarías el curso?</label>
 <div class="options">
-<label><input type="radio" name="q3">Sí</label>
-<label><input type="radio" name="q3">No</label>
-<label><input type="radio" name="q3">Tal vez</label>
+<label><input type="radio" name="q3" value="Sí">Sí</label>
+<label><input type="radio" name="q3" value="No">No</label>
+<label><input type="radio" name="q3" value="Tal vez">Tal vez</label>
 </div>
 </div>
 <div class="question-block">
 <label>4. ¿Qué mejorarías del curso?</label>
 <div class="type-open">
-<textarea placeholder="Escribe tu sugerencia..."></textarea>
+<textarea name="q4" placeholder="Escribe tu sugerencia..."></textarea>
 </div>
 </div>
 <div class="question-block">
 <label>5. Claridad de los objetivos</label>
 <div class="likert">
-<label><input type="radio" name="q5">⭐</label>
-<label><input type="radio" name="q5">⭐⭐</label>
-<label><input type="radio" name="q5">⭐⭐⭐</label>
-<label><input type="radio" name="q5">⭐⭐⭐⭐</label>
-<label><input type="radio" name="q5">⭐⭐⭐⭐⭐</label>
+<label><input type="radio" name="q5" value="⭐">⭐</label>
+<label><input type="radio" name="q5" value="⭐⭐">⭐⭐</label>
+<label><input type="radio" name="q5" value="⭐⭐⭐">⭐⭐⭐</label>
+<label><input type="radio" name="q5" value="⭐⭐⭐⭐">⭐⭐⭐⭐</label>
+<label><input type="radio" name="q5" value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐</label>
 </div>
 </div>
 <div class="question-block">
 <label>6. ¿Qué tanto aplicas lo aprendido?</label>
 <div class="options">
-<label><input type="radio" name="q6">Frecuentemente</label>
-<label><input type="radio" name="q6">Ocasionalmente</label>
-<label><input type="radio" name="q6">Nunca</label>
+<label><input type="radio" name="q6" value="Frecuentemente">Frecuentemente</label>
+<label><input type="radio" name="q6" value="Ocasionalmente">Ocasionalmente</label>
+<label><input type="radio" name="q6" value="Nunca">Nunca</label>
 </div>
 </div>
 <div class="question-block">
 <label>7. Comentarios adicionales</label>
 <div class="type-open">
-<textarea placeholder="Tu opinión es importante..."></textarea>
+<textarea name="q7" placeholder="Tu opinión es importante..."></textarea>
 </div>
 </div>
 <div class="question-block">
 <label>8. Dominio del instructor</label>
 <div class="likert">
-<label><input type="radio" name="q8">⭐</label>
-<label><input type="radio" name="q8">⭐⭐</label>
-<label><input type="radio" name="q8">⭐⭐⭐</label>
-<label><input type="radio" name="q8">⭐⭐⭐⭐</label>
-<label><input type="radio" name="q8">⭐⭐⭐⭐⭐</label>
+<label><input type="radio" name="q8" value="⭐">⭐</label>
+<label><input type="radio" name="q8" value="⭐⭐">⭐⭐</label>
+<label><input type="radio" name="q8" value="⭐⭐⭐">⭐⭐⭐</label>
+<label><input type="radio" name="q8" value="⭐⭐⭐⭐">⭐⭐⭐⭐</label>
+<label><input type="radio" name="q8" value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐</label>
 </div>
 </div>
 <div class="question-block">
 <label>9. ¿Volverías a tomar un curso con este instructor?</label>
 <div class="options">
-<label><input type="radio" name="q9">Sí</label>
-<label><input type="radio" name="q9">No</label>
+<label><input type="radio" name="q9" value="Sí">Sí</label>
+<label><input type="radio" name="q9" value="No">No</label>
 </div>
 </div>
 <div class="question-block">
 <label>10. ¿Qué tema te gustaría ver en una próxima sesión?</label>
 <div class="type-open">
-<textarea placeholder="Sugerencias de temas..."></textarea>
+<textarea name="q10" placeholder="Sugerencias de temas..."></textarea>
 </div>
 </div>
 <button type="submit">Enviar encuesta</button>
 </form>
 </div>
 <script>
-
-    document.querySelector("form").addEventListener("submit", function(e) {
-
-      e.preventDefault();
-
-      const data = {
-
-        q1: document.querySelectorAll("textarea")[0].value,
-
-        q2: document.querySelector('input[name="q2"]:checked')?.nextSibling.textContent.trim() || "",
-
-        q3: document.querySelector('input[name="q3"]:checked')?.nextSibling.textContent.trim() || "",
-
-        q4: document.querySelectorAll("textarea")[1].value,
-
-        q5: document.querySelector('input[name="q5"]:checked')?.nextSibling.textContent.trim() || "",
-
-        q6: document.querySelector('input[name="q6"]:checked')?.nextSibling.textContent.trim() || "",
-
-        q7: document.querySelectorAll("textarea")[2].value,
-
-        q8: document.querySelector('input[name="q8"]:checked')?.nextSibling.textContent.trim() || "",
-
-        q9: document.querySelector('input[name="q9"]:checked')?.nextSibling.textContent.trim() || "",
-
-        q10: document.querySelectorAll("textarea")[3].value
-
-      };
-
-      fetch("https://prod-179.westus.logic.azure.com:443/workflows/f74ac8a1373f4f95ae3e5b4686d20824/triggers/manual/paths/invoke?api-version=2016-06-01", {
-
-        method: "POST",
-
-        headers: {
-
-          "Content-Type": "application/json"
-
-        },
-
-        body: JSON.stringify(data)
-
-      }).then(res => {
-
-        if (res.ok) {
-
-          alert("✅ Encuesta enviada con éxito");
-
-        } else {
-
-          alert("❌ Error al enviar la encuesta");
-
-        }
-
-      }).catch(err => {
-          alert("❌ Error de red o de CORS: " + err.message);
-      });
-
-    });
+document.getElementById("encuestaForm").addEventListener("submit", function(e) {
+ e.preventDefault();
+ const form = e.target;
+ const data = {
+   q1: form.q1.value,
+   q2: form.q2.value,
+   q3: form.q3.value,
+   q4: form.q4.value,
+   q5: form.q5.value,
+   q6: form.q6.value,
+   q7: form.q7.value,
+   q8: form.q8.value,
+   q9: form.q9.value,
+   q10: form.q10.value,
+ };
+ fetch("https://prod-179.westus.logic.azure.com:443/workflows/f74ac8a1373f4f95ae3e5b4686d20824/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=5oidPXvLcbHauWvc_lu-ua99n6liLKsYPJlH_LYR_Tg", {
+   method: "POST",
+   headers: {
+     "Content-Type": "application/json"
+   },
+   body: JSON.stringify(data)
+ }).then(res => {
+   if (res.ok) {
+     alert("✅ Encuesta enviada con éxito");
+     form.reset();
+   } else {
+     alert("❌ Error al enviar la encuesta. Código HTTP: " + res.status);
+   }
+ }).catch(err => {
+   alert("❌ Error de red o CORS: " + err.message);
+   console.error(err);
+ });
+});
 </script>
 </body>
 </html>
